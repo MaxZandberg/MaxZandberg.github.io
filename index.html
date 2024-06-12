@@ -71,9 +71,9 @@ color:ghostwhite;
  <title>Form Submission</title>
   <script>
     function displayMessage(event) {
-      event.preventDefault(); // Prevent the default form submission
-      alert("I will contact you soon"); // Display the message
-      event.target.submit(); // Submit the form
+      event.preventDefault(); 
+      alert("I will contact you soon"); 
+      event.target.submit(); 
     }
   </script>
 <form action="/action_page.php" onsubmit="displayMessage(event)">
