@@ -68,8 +68,15 @@ color:ghostwhite;
 </aside>	
 	
 	<h2>Contact the one and only, John Doe</h2>
-
-<form action="/action_page.php">
+ <title>Form Submission</title>
+  <script>
+    function displayMessage(event) {
+      event.preventDefault(); // Prevent the default form submission
+      alert("I will contact you soon"); // Display the message
+      event.target.submit(); // Submit the form
+    }
+  </script>
+<form action="/action_page.php" onsubmit="displayMessage(event)">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="x"><br>
   <label for="lname">Last name:</label><br>
